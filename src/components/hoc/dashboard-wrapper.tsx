@@ -1,4 +1,3 @@
-import React from "react";
 import { Header } from "../navigation/header/header";
 import MainWrapper from "./main-wrapper";
 import { Sidebar } from "../navigation/sidebar/sidebar";
