@@ -45,7 +45,7 @@ export const Sidebar = () => {
               variant="outline"
               size="icon"
               className={cn(
-                "rounded-full p-0 transition-all ease-linear size-8 bg-primary hover:bg-primary/80  ",
+                "rounded-full p-0 border-0 outline-none transition-all ease-linear size-8 bg-primary hover:bg-primary/80  ",
                 isActive && "rotate-180"
               )}
             >
