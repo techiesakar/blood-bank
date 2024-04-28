@@ -1,11 +1,21 @@
 import { Play } from "lucide-react";
 import { NavItem } from "./nav-item";
-import { sidebarData } from "./sidebar-data";
+import { adminSidebarData, donarSidebarData } from "./sidebar-data";
 import { Button } from "@/components/ui/button";
 import { useMenuStatus } from "@/components/hoc/menu-context";
 import { cn } from "@/lib/utils/tailwind-utils";
+import { useAuth } from "@/components/hoc/auth-context";
+import longLogo from "@/assets/long-logo.jpg";
+import logoIcon from "@/assets/logo-icon.png";
 
 export const Sidebar = () => {
+  const { user } = useAuth();
+  const sidebarData =
+    user?.role === "admin"
+      ? adminSidebarData
+      : user?.role === "user"
+      ? donarSidebarData
+      : [];
   const { isActive, setIsActive } = useMenuStatus();
   return (
     <div className="fixed  h-full  inset-y-0 z-1000 border-r bg-background">
@@ -17,12 +27,12 @@ export const Sidebar = () => {
       >
         <div className="h-header w-full px-3 border-b flex items-center py-6">
           <img
-            src="./long-logo.jpg"
+            src={longLogo}
             className={cn("h-8 lg:block hidden", !isActive && "lg:hidden")}
           />
 
           <img
-            src="./logo-icon.png"
+            src={logoIcon}
             className={cn("size-10 lg:hidden", !isActive && "lg:block")}
           />
         </div>
