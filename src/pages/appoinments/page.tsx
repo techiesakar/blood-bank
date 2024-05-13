@@ -1,4 +1,4 @@
-// For Donar Appoinments Lists - Admin
+// For Donor Appoinments Lists - Admin
 const Appoinments = () => {
   return <div>Appoinments</div>;
 };

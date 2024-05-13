@@ -1,3 +1,3 @@
-# Blood Bank Website Demo
+# Nepal Red Cross Society
 
-This website doesn't represent any real Blood Bank. This is for educational purpose
+This is Website of Nepal Red Cross Society

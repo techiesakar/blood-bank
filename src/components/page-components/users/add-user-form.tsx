@@ -1,19 +1,21 @@
+import { useForm } from "react-hook-form";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { LoadingButton } from "@/components/common/loading-button";
-
 import { InputFormField } from "@/components/common/input-form-field";
+
+import { SingleSelectField } from "@/components/common/single-select-field";
+import { PasswordInputFormField } from "@/components/common/password-input-field";
+
 import {
   UserProfileDefaultValues,
   UserProfileFields,
   UserProfileSchema,
   UserProfileType,
 } from "@/lib/schemas/user-profile.schema";
-import { SingleSelectField } from "@/components/common/single-select-field";
-import { PasswordInputFormField } from "@/components/common/password-input-field";
 
 export const AddUserForm = () => {
   const form = useForm<UserProfileType>({
@@ -24,6 +26,7 @@ export const AddUserForm = () => {
   const onSubmit = (values: UserProfileType) => {
     console.log(values);
   };
+
   return (
     <div className="w-full max-w-[720px]">
       <Card>
@@ -34,7 +37,7 @@ export const AddUserForm = () => {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className=" grid grid-cols-2 gap-4 place-content-center items-center"
+              className=" grid grid-cols-2 gap-4 "
             >
               {UserProfileFields.map((item) =>
                 item.fieldTag == "input" ? (
@@ -62,6 +65,7 @@ export const AddUserForm = () => {
                   )
                 )
               )}
+
               <div className="col-span-2">
                 <LoadingButton
                   isLoading={false}

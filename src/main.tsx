@@ -6,12 +6,18 @@ import { Toaster } from "react-hot-toast";
 import "./index.css";
 
 import { router } from "./router";
+import { TanstackProvider } from "./components/hoc/tanstack-provider";
+import { AuthProvider } from "./components/hoc/auth-provider";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <AuthContextProvider>
-      <RouterProvider router={router} />
-      <Toaster />
-    </AuthContextProvider>
+    <TanstackProvider>
+      <AuthProvider>
+        <AuthContextProvider>
+          <RouterProvider router={router} />
+          <Toaster />
+        </AuthContextProvider>
+      </AuthProvider>
+    </TanstackProvider>
   </React.StrictMode>
 );

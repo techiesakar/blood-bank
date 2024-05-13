@@ -1,12 +1,7 @@
-import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "../ui/form";
+import { FormControl, FormField, FormItem, FormMessage } from "../ui/form";
 import { UseFormReturn } from "react-hook-form";
 import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
 type PropsType = {
   form: UseFormReturn<any, any, undefined>;
@@ -14,7 +9,7 @@ type PropsType = {
     fieldId: string;
     type: string;
     label: string;
-    placeholder: string;
+    placeholder?: string;
   };
 };
 
@@ -27,15 +22,16 @@ export const InputFormField = ({ form, item }: PropsType) => {
       render={({ field }) => {
         return (
           <FormItem>
-            <FormLabel>{item.label}</FormLabel>
+            <Label>{item.label}</Label>
             <FormControl>
               <Input
+                autoComplete="false"
                 {...field}
                 type={item.type}
                 placeholder={item.placeholder}
               />
             </FormControl>
-            <FormMessage />
+            <FormMessage className="text-sm font-light" />
           </FormItem>
         );
       }}

@@ -26,20 +26,22 @@ import {
 
 import { DataTableViewOptions } from "./data-table-view-option";
 
-interface DataTableProps<TData, TValue> {
+interface DataTableProps<TData extends { id: string }, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
   filterPlaceholder?: string;
   filterKey?: string;
   isLoading?: boolean;
+  deletePath?: string;
 }
 
-export function DataTable<TData, TValue>({
+export function DataTable<TData extends { id: string }, TValue>({
   columns,
   data,
   filterKey,
   filterPlaceholder,
   isLoading,
+  deletePath,
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
@@ -86,7 +88,7 @@ export function DataTable<TData, TValue>({
           />
         )}
 
-        <DataTableViewOptions table={table} />
+        <DataTableViewOptions table={table} deletePath={deletePath} />
       </div>
       <Table className=" bg-card p-6 rounded-lg min-w-max">
         <TableHeader>

@@ -7,14 +7,16 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils/tailwind-utils";
 import { LucideIcon } from "lucide-react";
+import { IconType } from "react-icons/lib";
 import { Link, useLocation } from "react-router-dom";
 
 type Props = {
-  icon: LucideIcon;
+  icon: LucideIcon | IconType;
   label: string;
   path: string;
+  fontSize?: string;
 };
-export const NavItem = ({ icon, label, path }: Props) => {
+export const NavItem = ({ icon, label, path, fontSize }: Props) => {
   const { isActive: menuActive } = useMenuStatus();
   const { pathname } = useLocation();
   const isActive = pathname.includes(path);
@@ -43,7 +45,8 @@ export const NavItem = ({ icon, label, path }: Props) => {
               <div
                 className={cn(
                   "ml-3 capitalize text-sm group-hover:text-primary transition-all ease-linear duration-200 w-auto overflow-hidden opacity-100",
-                  !menuActive && "w-0 opacity-0"
+                  !menuActive && "w-0 opacity-0",
+                  fontSize
                 )}
               >
                 {label}

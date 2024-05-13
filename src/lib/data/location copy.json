@@ -1,0 +1,748 @@
+{
+  "bagmati": {
+    "name": "Bagmati",
+    "districts": {
+      "sindhuli": {
+        "name": "Sindhuli",
+        "municipals": {
+          "marin": {
+            "name": "Marin Rural Municipality"
+          },
+          "phikkal": {
+            "name": "Phikkal Rural Municipality"
+          },
+          "tinpatan": {
+            "name": "Tinpatan Rural Municipality"
+          },
+          "sunkoshi": {
+            "name": "Sunkoshi Rural Municipality"
+          },
+          "golanjor": {
+            "name": "Golanjor Rural Municipality"
+          },
+          "ghanglekh": {
+            "name": "Ghanglekh Rural Municipality"
+          },
+          "hariharpurgadhi": {
+            "name": "Hariharpurgadhi Rural Municipality"
+          },
+          "dudhouli": {
+            "name": "Dudhouli Municipality"
+          },
+          "kamalamai": {
+            "name": "Kamalamai Municipality"
+          }
+        }
+      },
+      "ramechhap": {
+        "name": "Ramechhap",
+        "municipals": {
+          "bigu": {
+            "name": "Bigu Rural Municipality"
+          },
+          "sailung": {
+            "name": "Sailung Rural Municipality"
+          },
+          "melung": {
+            "name": "Melung Rural Municipality"
+          },
+          "baiteshwor": {
+            "name": "Baiteshwor Rural Municipality"
+          },
+          "tamakoshi": {
+            "name": "Tamakoshi Rural Municipality"
+          },
+          "gaurishankar": {
+            "name": "Gaurishankar Rural Municipality"
+          },
+          "kalinchok": {
+            "name": "Kalinchok Rural Municipality"
+          },
+          "jiri": {
+            "name": "Jiri Municipality"
+          },
+          "bhimeshwor": {
+            "name": "Bhimeshwor Municipality"
+          }
+        }
+      },
+      "dolakha": {
+        "name": "Dolakha",
+        "municipals": {
+          "marin": {
+            "name": "Marin Rural Municipality"
+          },
+          "phikkal": {
+            "name": "Phikkal Rural Municipality"
+          },
+          "tinpatan": {
+            "name": "Tinpatan Rural Municipality"
+          },
+          "sunkoshi": {
+            "name": "Sunkoshi Rural Municipality"
+          },
+          "golanjor": {
+            "name": "Golanjor Rural Municipality"
+          },
+          "ghanglekh": {
+            "name": "Ghanglekh Rural Municipality"
+          },
+          "hariharpurgadhi": {
+            "name": "Hariharpurgadhi Rural Municipality"
+          },
+          "dudhouli": {
+            "name": "Dudhouli Municipality"
+          },
+          "kamalamai": {
+            "name": "Kamalamai Municipality"
+          }
+        }
+      },
+      "bhaktapur": {
+        "name": "Bhaktapur",
+        "municipals": {
+          "changunarayan": {
+            "name": "Changunarayan Municipality"
+          },
+          "suryabinayak": {
+            "name": "Suryabinayak Municipality"
+          },
+          "bhaktapur": {
+            "name": "Bhaktapur Municipality"
+          },
+          "madhyapur_thimi": {
+            "name": "Madhyapur Thimi Municipality"
+          }
+        }
+      },
+      "dhading": {
+        "name": "dhading",
+        "municipals": {
+          "gajuri": { "name": "Gajuri Rural Municipality" },
+          "galchi": { "name": "Galchi Rural Municipality" },
+          "thakre": { "name": "Thakre Rural Municipality" },
+          "siddhalek": { "name": "Siddhalek Rural Municipality" },
+          "khaniyabash": { "name": "Khaniyabash Rural Municipality" },
+          "jwalamukhi": { "name": "Jwalamukhi Rural Municipality" },
+          "gangajamuna": { "name": "Gangajamuna Rural Municipality" },
+          "rubi": { "name": "Rubi Valley Rural Municipality" },
+          "tripura": { "name": "Tripura Sundari Rural Municipality" },
+          "netrawati": {
+            "name": "Netrawati Dabjong Rural Municipality"
+          },
+          "benighat": {
+            "name": "Benighat Rorang Rural Municipality"
+          },
+          "nilakantha": { "name": "Nilakantha Municipality" },
+          "dhunibesi": { "name": "Dhunibesi Municipality" }
+        }
+      },
+      "kathmandu": {
+        "name": "Kathmandu",
+        "municipals": {
+          "kirtipur": { "name": "Kirtipur Municipality" },
+          "shankharapur": { "name": "Shankharapur Municipality" },
+          "nagarjun": { "name": "Nagarjun Municipality" },
+          "kageshwori_manahora": {
+            "name": "Kageshwori Manahora Municipality"
+          },
+          "dakshinkali": { "name": "Dakshinkali Municipality" },
+          "budhanilakantha": {
+            "name": "Budhanilakantha Municipality"
+          },
+          "tarakeshwor": { "name": "Tarakeshwor Municipality" },
+          "kathmandu_metropolitan_city": {
+            "name": "Kathmandu Metropolitan City"
+          },
+          "tokha": { "name": "Tokha Municipality" },
+          "chandragiri": { "name": "Chandragiri Municipality" },
+          "gokarneshwor": { "name": "Gokarneshwor Municipality" }
+        }
+      },
+      "kavrepalanchok": {
+        "name": "Kavrepalanchok",
+        "municipals": {
+          "roshi": { "name": "Roshi Rural Municipality" },
+          "temal": { "name": "Temal Rural Municipality" },
+          "bhumlu": { "name": "Bhumlu Rural Municipality" },
+          "mahabharat": { "name": "Mahabharat Rural Municipality" },
+          "bethanchowk": { "name": "Bethanchowk Rural Municipality" },
+          "khanikhola": { "name": "Khanikhola Rural Municipality" },
+          "chaurideurali": {
+            "name": "Chaurideurali Rural Municipality"
+          },
+          "banepa": { "name": "Banepa Municipality" },
+          "mandandeupur": { "name": "Mandandeupur Municipality" },
+          "dhulikhel": { "name": "Dhulikhel Municipality" },
+          "panauti": { "name": "Panauti Municipality" },
+          "namobuddha": { "name": "Namobuddha Municipality" },
+          "panchkhal": { "name": "Panchkhal Municipality" }
+        }
+      },
+
+      "lalitpur": {
+        "name": "Lalitpur",
+        "municipals": {
+          "bagmati": {
+            "name": "Bagmati Rural Municipality"
+          },
+          "mahankal": {
+            "name": "Mahankal Rural Municipality"
+          },
+          "konjyosom": {
+            "name": "Konjyosom Rural Municipality"
+          },
+          "lalitpur_metropolitan": {
+            "name": "Lalitpur Metropolitan City"
+          },
+          "mahalaxmi": {
+            "name": "Mahalaxmi Municipality"
+          },
+          "godawari": {
+            "name": "Godawari Municipality"
+          }
+        }
+      },
+
+      "nuwakot": {
+        "name": "Nuwakot",
+        "municipals": {
+          "kakani": {
+            "name": "Kakani Rural Municipality"
+          },
+          "tadi": {
+            "name": "Tadi Rural Municipality"
+          },
+          "likhu": {
+            "name": "Likhu Rural Municipality"
+          },
+          "myagang": {
+            "name": "Myagang Rural Municipality"
+          },
+          "shivapuri": {
+            "name": "Shivapuri Rural Municipality"
+          },
+          "kispang": {
+            "name": "Kispang Rural Municipality"
+          },
+          "suryagadhi": {
+            "name": "Suryagadhi Rural Municipality"
+          },
+          "tarkeshwar": {
+            "name": "Tarkeshwar Rural Municipality"
+          },
+          "panchakanya": {
+            "name": "Panchakanya Rural Municipality"
+          },
+          "dupcheshwar": {
+            "name": "Dupcheshwar Rural Municipality"
+          },
+          "belkotgadhi": {
+            "name": "Belkotgadhi Municipality"
+          },
+          "bidur": {
+            "name": "Bidur Municipality"
+          }
+        }
+      },
+      "rasuwa": {
+        "name": "Rasuwa",
+        "municipals": {
+          "kalika": {
+            "name": "Kalika Rural Municipality"
+          },
+          "naukunda": {
+            "name": "Naukunda Rural Municipality"
+          },
+          "uttargaya": {
+            "name": "Uttargaya Rural Municipality"
+          },
+          "gosaikunda": {
+            "name": "Gosaikunda Rural Municipality"
+          },
+          "amachodingmo": {
+            "name": "Amachodingmo Rural Municipality"
+          }
+        }
+      },
+      "sindhupalchok": {
+        "name": "Sindhupalchok",
+        "municipals": {
+          "jugal": {
+            "name": "Jugal Rural Municipality"
+          },
+          "balefi": {
+            "name": "Balefi Rural Municipality"
+          },
+          "sunkoshi": {
+            "name": "Sunkoshi Rural Municipality"
+          },
+          "helambu": {
+            "name": "Helambu Rural Municipality"
+          },
+          "bhotekoshi": {
+            "name": "Bhotekoshi Rural Municipality"
+          },
+          "lisangkhu_pakhar": {
+            "name": "Lisangkhu Pakhar Rural Municipality"
+          },
+          "indrawati": {
+            "name": "Indrawati Rural Municipality"
+          },
+          "tripurasundari": {
+            "name": "Tripurasundari Rural Municipality"
+          },
+          "panchpokhari_thangpal": {
+            "name": "Panchpokhari Thangpal Rural Municipality"
+          },
+          "chautara_sangachokgadhi": {
+            "name": "Chautara Sangachokgadhi Municipality"
+          },
+          "barhabise": {
+            "name": "Barhabise Municipality"
+          },
+          "melamchi": {
+            "name": "Melamchi Municipality"
+          }
+        }
+      },
+      "chitwan": {
+        "name": "Chitwan",
+        "municipals": {
+          "ichchhyakamana": {
+            "name": "Ichchhyakamana Rural Municipality"
+          },
+          "bharatpur_metropolitan": {
+            "name": "Bharatpur Metropolitan City"
+          },
+          "kalika": {
+            "name": "Kalika Municipality"
+          },
+          "khairahani": {
+            "name": "Khairahani Municipality"
+          },
+          "madi": {
+            "name": "Madi Municipality"
+          },
+          "rapti": {
+            "name": "Rapti Municipality"
+          },
+          "ratnanagar": {
+            "name": "Ratnanagar Municipality"
+          }
+        }
+      },
+      "makwanpur": {
+        "name": "Makwanpur",
+        "municipals": {
+          "bakaiya": {
+            "name": "Bakaiya Rural Municipality"
+          },
+          "kailash": {
+            "name": "Kailash Rural Municipality"
+          },
+          "manahari": {
+            "name": "Manahari Rural Municipality"
+          },
+          "bhimphedi": {
+            "name": "Bhimphedi Rural Municipality"
+          },
+          "bagmati": {
+            "name": "Bagmati Rural Municipality"
+          },
+          "raksirang": {
+            "name": "Raksirang Rural Municipality"
+          },
+          "makawanpurgadhi": {
+            "name": "Makawanpurgadhi Rural Municipality"
+          },
+          "indrasarowar": {
+            "name": "Indrasarowar Rural Municipality"
+          },
+          "hetauda_sub-metropolitan": {
+            "name": "Hetauda Sub-metropolitan City"
+          },
+          "thaha": {
+            "name": "Thaha Municipality"
+          }
+        }
+      }
+    }
+  },
+  "lumbini": {
+    "name": "Rupandehi",
+    "districts": {
+      "kapilvastu": {
+        "name": "Kapilvastu",
+        "municipals": {
+          "yashodhara": {
+            "name": "Yashodhara Rural Municipality"
+          },
+          "bijayanagar": {
+            "name": "Bijayanagar Rural Municipality"
+          },
+          "mayadevi": {
+            "name": "Mayadevi Rural Municipality"
+          },
+          "suddhodhan": {
+            "name": "Suddhodhan Rural Municipality"
+          },
+          "shivaraj": {
+            "name": "Shivaraj Municipality"
+          },
+          "kapilbastu": {
+            "name": "Kapilbastu Municipality"
+          },
+          "buddhabhumi": {
+            "name": "Buddhabhumi Municipality"
+          },
+          "maharajgunj": {
+            "name": "Maharajgunj Municipality"
+          },
+          "banganga": {
+            "name": "Banganga Municipality"
+          },
+          "krishnanagar": {
+            "name": "Krishnanagar Municipality"
+          }
+        }
+      },
+
+      "rupandehi": {
+        "name": "Rupandehi",
+        "municipals": {
+          "kanchan": {
+            "name": "Kanchan Rural Municipality"
+          },
+          "siyari": {
+            "name": "Siyari Rural Municipality"
+          },
+          "rohini": {
+            "name": "Rohini Rural Municipality"
+          },
+          "gaidahawa": {
+            "name": "Gaidahawa Rural Municipality"
+          },
+          "omsatiya": {
+            "name": "Omsatiya Rural Municipality"
+          },
+          "sudhdhodhan": {
+            "name": "Sudhdhodhan Rural Municipality"
+          },
+          "mayadevi": {
+            "name": "Mayadevi Rural Municipality"
+          },
+          "marchawari": {
+            "name": "Marchawari Rural Municipality"
+          },
+          "kotahimai": {
+            "name": "Kotahimai Rural Municipality"
+          },
+          "sammarimai": {
+            "name": "Sammarimai Rural Municipality"
+          },
+          "butwal_sub-metropolitian": {
+            "name": "Butwal Sub-metropolitan City"
+          },
+          "lumbini_sanskritik": {
+            "name": "Lumbini Sanskritik Municipality"
+          },
+          "devdaha": {
+            "name": "Devdaha Municipality"
+          },
+          "sainamaina": {
+            "name": "Sainamaina Municipality"
+          },
+          "siddharthanagar": {
+            "name": "Siddharthanagar Municipality"
+          },
+          "tillotama": {
+            "name": "Tillotama Municipality"
+          }
+        }
+      },
+
+      "arghakhanchi": {
+        "name": "Arghakhanchi",
+        "municipals": {
+          "panini": {
+            "name": "Panini Rural Municipality"
+          },
+          "chhatradev": {
+            "name": "Chhatradev Rural Municipality"
+          },
+          "malarani": {
+            "name": "Malarani Rural Municipality"
+          },
+          "bhumekasthan": {
+            "name": "Bhumekasthan Municipality"
+          },
+          "sitganga": {
+            "name": "Sitganga Municipality"
+          },
+          "sandhikharka": {
+            "name": "Sandhikharka Municipality"
+          }
+        }
+      },
+
+      "gulmi": {
+        "name": "Gulmi",
+        "municipals": {
+          "ruru": {
+            "name": "Ruru Rural Municipality"
+          },
+          "isma": {
+            "name": "Isma Rural Municipality"
+          },
+          "madane": {
+            "name": "Madane Rural Municipality"
+          },
+          "malika": {
+            "name": "Malika Rural Municipality"
+          },
+          "chatrakot": {
+            "name": "Chatrakot Rural Municipality"
+          },
+          "dhurkot": {
+            "name": "Dhurkot Rural Municipality"
+          },
+          "satyawati": {
+            "name": "Satyawati Rural Municipality"
+          },
+          "chandrakot": {
+            "name": "Chandrakot Rural Municipality"
+          },
+          "kaligandaki": {
+            "name": "Kaligandaki Rural Municipality"
+          },
+          "gulmidarbar": {
+            "name": "Gulmidarbar Rural Municipality"
+          },
+          "resunga": {
+            "name": "Resunga Municipality"
+          },
+          "musikot": {
+            "name": "Musikot Municipality"
+          }
+        }
+      },
+
+      "palpa": {
+        "name": "Palpa",
+        "municipals": {
+          "rambha": {
+            "name": "Rambha Rural Municipality"
+          },
+          "tinau": {
+            "name": "Tinau Rural Municipality"
+          },
+          "nisdi": {
+            "name": "Nisdi Rural Municipality"
+          },
+          "mathagadhi": {
+            "name": "Mathagadhi Rural Municipality"
+          },
+          "ribdikot": {
+            "name": "Ribdikot Rural Municipality"
+          },
+          "purbakhola": {
+            "name": "Purbakhola Rural Municipality"
+          },
+          "bagnaskali": {
+            "name": "Bagnaskali Rural Municipality"
+          },
+          "rainadevi_chhahara": {
+            "name": "Rainadevi Chhahara Rural Municipality"
+          },
+          "tansen": {
+            "name": "Tansen Municipality"
+          },
+          "rampur": {
+            "name": "Rampur Municipality"
+          }
+        }
+      },
+
+      "dang": {
+        "name": "Dang",
+        "municipals": {
+          "babai": {
+            "name": "Babai Rural Municipality"
+          },
+          "gadhawa": {
+            "name": "Gadhawa Rural Municipality"
+          },
+          "rapti": {
+            "name": "Rapti Rural Municipality"
+          },
+          "rajpur": {
+            "name": "Rajpur Rural Municipality"
+          },
+          "dangisharan": {
+            "name": "Dangisharan Rural Municipality"
+          },
+          "shantinagar": {
+            "name": "Shantinagar Rural Municipality"
+          },
+          "banglachuli": {
+            "name": "Banglachuli Rural Municipality"
+          },
+          "tulsipur_sub-metropolitian": {
+            "name": "Tulsipur Sub-metropolitan City"
+          },
+          "ghorahi_sub-metropolitian": {
+            "name": "Ghorahi Sub-metropolitan City"
+          },
+          "lamahi": {
+            "name": "Lamahi Municipality"
+          }
+        }
+      },
+
+      "pyuthan": {
+        "name": "Pyuthan",
+        "municipals": {
+          "ayirabati": {
+            "name": "Ayirabati Rural Municipality"
+          },
+          "gaumukhi": {
+            "name": "Gaumukhi Rural Municipality"
+          },
+          "jhimruk": {
+            "name": "Jhimruk Rural Municipality"
+          },
+          "naubahini": {
+            "name": "Naubahini Rural Municipality"
+          },
+          "mandavi": {
+            "name": "Mandavi Rural Municipality"
+          },
+          "mallarani": {
+            "name": "Mallarani Rural Municipality"
+          },
+          "sarumarani": {
+            "name": "Sarumarani Rural Municipality"
+          },
+          "pyuthan": {
+            "name": "Pyuthan Municipality"
+          },
+          "sworgadwary": {
+            "name": "Sworgadwary Municipality"
+          }
+        }
+      },
+
+      "rolpa": {
+        "name": "Rolpa",
+        "municipals": {
+          "madi": {
+            "name": "Madi Rural Municipality"
+          },
+          "thawang": {
+            "name": "Thawang Rural Municipality"
+          },
+          "sunchhahari": {
+            "name": "Sunchhahari Rural Municipality"
+          },
+          "lungri": {
+            "name": "Lungri Rural Municipality"
+          },
+          "gangadev": {
+            "name": "Gangadev Rural Municipality"
+          },
+          "tribeni": {
+            "name": "Tribeni Rural Municipality"
+          },
+          "pariwartan": {
+            "name": "Pariwartan Rural Municipality"
+          },
+          "runtigadi": {
+            "name": "Runtigadi Rural Municipality"
+          },
+          "sunil_smriti": {
+            "name": "Sunil Smriti Rural Municipality"
+          },
+          "rolpa": {
+            "name": "Rolpa Municipality"
+          }
+        }
+      },
+
+      "eastern_rukum": {
+        "name": "Eastern Rukum",
+        "municipals": {
+          "bhume": {
+            "name": "Bhume Rural Municipality"
+          },
+          "sisne": {
+            "name": "Sisne Rural Municipality"
+          },
+          "putha_uttarganga": {
+            "name": "Putha Uttarganga Rural Municipality"
+          }
+        }
+      },
+
+      "bake": {
+        "name": "Bake",
+        "municipals": {
+          "khajura": {
+            "name": "Khajura Rural Municipality"
+          },
+          "janki": {
+            "name": "Janki Rural Municipality"
+          },
+          "baijanath": {
+            "name": "Baijanath Rural Municipality"
+          },
+          "duduwa": {
+            "name": "Duduwa Rural Municipality"
+          },
+          "narainapur": {
+            "name": "Narainapur Rural Municipality"
+          },
+          "rapti_sonori": {
+            "name": "Rapti Sonori Rural Municipality"
+          },
+          "kohalpur": {
+            "name": "Kohalpur Municipality"
+          },
+          "nepalgunj_sub-metropolitian": {
+            "name": "Nepalgunj Sub-metropolitan City"
+          }
+        }
+      },
+
+      "bardiya": {
+        "name": "Bardiya",
+        "municipals": {
+          "geruwa": {
+            "name": "Geruwa Rural Municipality"
+          },
+          "badhaiyatal": {
+            "name": "Badhaiyatal Rural Municipality"
+          },
+          "thakurbaba": {
+            "name": "Thakurbaba Municipality"
+          },
+          "bansagadhi": {
+            "name": "Bansagadhi Municipality"
+          },
+          "barbardiya": {
+            "name": "Barbardiya Municipality"
+          },
+          "rajapur": {
+            "name": "Rajapur Municipality"
+          },
+          "madhuwan": {
+            "name": "Madhuwan Municipality"
+          },
+          "gulariya": {
+            "name": "Gulariya Municipality"
+          }
+        }
+      }
+    }
+  }
+}
