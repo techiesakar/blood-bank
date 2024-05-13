@@ -14,7 +14,7 @@ type PropsType = {
     fieldId: string;
     type: string;
     label: string;
-    placeholder: string;
+    placeholder?: string;
   };
 };
 
@@ -29,9 +29,12 @@ export const PasswordInputFormField = ({ form, item }: PropsType) => {
           <FormItem>
             <FormLabel>{item.label}</FormLabel>
             <FormControl>
-              <PasswordInput {...field} placeholder={item.placeholder} />
+              <PasswordInput
+                {...field}
+                placeholder={item.placeholder || "Enter password"}
+              />
             </FormControl>
-            <FormMessage />
+            <FormMessage className="text-sm font-light" />
           </FormItem>
         );
       }}

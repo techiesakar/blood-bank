@@ -1,4 +1,4 @@
-import { User, UserRole } from "@/lib/types/user.type";
+import { Gender, User, UserRole } from "@/lib/types/user-type";
 import {
   PropsWithChildren,
   createContext,
@@ -18,12 +18,14 @@ type AuthProviderProps = PropsWithChildren;
 
 export default function AuthContextProvider({ children }: AuthProviderProps) {
   const [user, setUser] = useState<User | null>(null);
+
   useEffect(() => {
     setUser({
       id: "1",
       name: "Sakar Aryal",
       email: "techiesakar@gmail.com",
       role: "admin" as UserRole,
+      gender: "male" as Gender,
     });
   }, []);
 

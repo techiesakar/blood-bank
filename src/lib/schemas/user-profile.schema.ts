@@ -1,48 +1,47 @@
 import { z } from "zod";
-import { UserRole } from "../types/user.type";
 import { FileWithStringType } from "./image-schema";
+import { Gender, UserRole } from "../types/user-type";
 
 const passwordValidation = new RegExp(
   /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/
 );
 
-export const UserProfileSchema = z
-  .object({
-    name: z
-      .string()
-      .min(3)
-      .max(30)
-      .regex(/^[a-zA-Z\s]+$/),
-    phone: z
-      .string()
-      .regex(/^(98|97)\d{8}$/)
-      .optional(),
-    email: z.string().email(),
-    password: z.string().regex(passwordValidation, {
-      message:
-        "Password must have atleast one small and capital letter, number and special character",
-    }),
-    role: z.nativeEnum(UserRole),
-    image: FileWithStringType,
-  })
-  .refine((data) => {
-    if (!/(?=.*[a-z])/.test(data.password)) {
-      return {
-        message: "Password must contain at least one lowercase letter.",
-        path: ["password"],
-      };
-    }
-    if (!/(?=.*[A-Z])/.test(data.password)) {
-      throw new Error("Password must contain at least one uppercase letter.");
-    }
-  });
+export const UserProfileSchema = z.object({
+  firstName: z
+    .string()
+    .min(3)
+    .max(30)
+    .regex(/^[a-zA-Z\s]+$/),
+  lastName: z
+    .string()
+    .min(3)
+    .max(30)
+    .regex(/^[a-zA-Z\s]+$/),
+  phone: z
+    .string()
+    .regex(/^(98|97)\d{8}$/, {
+      message: "Enter valid phone number",
+    })
+    .optional(),
+  email: z.string().email(),
+  password: z.string().regex(passwordValidation, {
+    message:
+      "Password must have atleast one small and capital letter, number and special character",
+  }),
+  role: z.nativeEnum(UserRole),
+  gender: z.nativeEnum(Gender),
+  image: FileWithStringType,
+  dob: z.string(),
+});
 
 export const UserProfileDefaultValues = {
-  name: "",
+  firstName: "",
+  lastName: "",
   email: "",
   phone: "",
   password: "",
   image: "",
+  gender: undefined,
   role: "user" as UserRole,
 };
 
@@ -62,9 +61,17 @@ type UserProfileField = {
 // Define the UserProfileFields array with the specified type
 export const UserProfileFields: UserProfileField[] = [
   {
-    fieldId: "name",
-    label: "Name",
-    placeholder: "Enter name",
+    fieldId: "firstName",
+    label: "First Name",
+    placeholder: "Enter First Name",
+    required: true,
+    fieldTag: "input",
+    type: "text",
+  },
+  {
+    fieldId: "lastName",
+    label: "Last Name",
+    placeholder: "Enter Last Name",
     required: true,
     fieldTag: "input",
     type: "text",
@@ -94,6 +101,19 @@ export const UserProfileFields: UserProfileField[] = [
     options: Object.keys(UserRole).map((key) => ({
       value: key,
       label: UserRole[key as keyof typeof UserRole],
+    })),
+    type: "select",
+  },
+
+  {
+    fieldId: "gender",
+    label: "Gender",
+    placeholder: "Select Gender",
+    required: true,
+    fieldTag: "select",
+    options: Object.keys(Gender).map((key) => ({
+      value: key,
+      label: Gender[key as keyof typeof Gender],
     })),
     type: "select",
   },

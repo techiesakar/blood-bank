@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
-import { HiArrowLongLeft } from "react-icons/hi2";
+import { GoArrowLeft } from "react-icons/go";
+
 type PropsType = {
   children: React.ReactNode;
   addBtn?: boolean;
@@ -9,6 +10,7 @@ type PropsType = {
   path?: string;
   subtitle?: string;
   showGoBack?: boolean;
+  modalButton?: React.ReactNode;
 };
 
 const CrudHeaderLayout = ({
@@ -19,6 +21,7 @@ const CrudHeaderLayout = ({
   path,
   subtitle,
   showGoBack,
+  modalButton,
 }: PropsType) => {
   const navigate = useNavigate();
   if (addBtn) {
@@ -29,8 +32,16 @@ const CrudHeaderLayout = ({
       throw new Error("Button cannot be used without buttonLabel");
     }
   }
+
   return (
-    <div>
+    <div className="h-full">
+      {showGoBack && (
+        <Button variant="link" onClick={() => navigate(-1)} className="p-0">
+          <GoArrowLeft className="mr-2" />
+          <span>Go back</span>
+        </Button>
+      )}
+
       <div className="flex items-center gap-x-3">
         {title && (
           <div className="flex gap-x-4 items-center mb-4">
@@ -45,15 +56,13 @@ const CrudHeaderLayout = ({
                 </Button>
               </Link>
             )}
+            {modalButton}
           </div>
         )}
       </div>
+
       {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
-      {showGoBack && (
-        <Button variant="link" onClick={() => navigate(-1)} className="p-0">
-          <HiArrowLongLeft className="mr-2" /> <span>Go back</span>
-        </Button>
-      )}
+
       {children}
     </div>
   );

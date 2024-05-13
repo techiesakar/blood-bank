@@ -1,4 +1,5 @@
 import CrudHeaderLayout from "@/components/hoc/crud-header-layout";
+import { OrganizationTable } from "@/components/page-components/organizations/table/organization-table";
 
 const OrganizationPage = () => {
   return (
@@ -8,7 +9,7 @@ const OrganizationPage = () => {
       path="/organizations/add-new"
       buttonLabel="Add New"
     >
-      Hello
+      <OrganizationTable />
     </CrudHeaderLayout>
   );
 };

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils/tailwind-utils";
 import { ChangeEvent } from "react";
-import { CiTrash } from "react-icons/ci";
+import { FaTrash } from "react-icons/fa";
 import { IoCloudUploadOutline } from "react-icons/io5";
 
 type PropsType = {
@@ -13,8 +13,6 @@ type PropsType = {
 };
 
 export const ProfileUpload = ({
-  label,
-  require,
   fieldId,
   setValue,
   values,
@@ -23,20 +21,20 @@ export const ProfileUpload = ({
   return (
     <div
       className={cn(
-        "flex gap-4 items-center justify-center flex-col w-full border p-4 min-h-[100px] rounded-xl relative",
+        "flex gap-4 items-center justify-center flex-col w-full border size-[160px] rounded-full relative",
         className
       )}
     >
       {(values instanceof File ||
         (typeof values == "string" && values.trim() !== "")) &&
       (values !== undefined || values !== null) ? (
-        <div className="flex items-center justify-center gap-3  w-full">
+        <div className="flex items-center justify-center gap-3  w-full h-full relative">
           {values instanceof File && (
             <img
               src={URL.createObjectURL(values)}
-              className="rounded w-auto max-h-[180px]"
-              width={500}
-              height={500}
+              className="size-[150px] rounded-full max-w-full"
+              width={150}
+              height={150}
               alt="image"
             />
           )}
@@ -44,9 +42,9 @@ export const ProfileUpload = ({
           {typeof values == "string" && values.length > 5 && (
             <img
               src={`${import.meta.env.VITE_REACT_APP_API_URL}/${values}`}
-              className="max-h-32  rounded w-auto"
-              width={500}
-              height={500}
+              className="size-[150px] rounded-full max-w-full"
+              width={150}
+              height={150}
               alt="image"
             />
           )}
@@ -64,10 +62,9 @@ export const ProfileUpload = ({
                 shouldValidate: true,
               });
             }}
-            className="text-red-500 cursor-pointer text-xl absolute top-6 right-6"
+            className="text-red-500  cursor-pointer text-xl w-full group h-full hover:bg-gray-800/30 duration-300 ease-linear rounded-full absolute"
           >
-            {" "}
-            <CiTrash />
+            <FaTrash className="absolute top-1/2 right-1/2 invisible group-hover:visible text-red-500 size-6 -translate-y-1/2 translate-x-1/2" />
           </span>
         </div>
       ) : (
@@ -75,11 +72,7 @@ export const ProfileUpload = ({
           htmlFor={fieldId}
           className=" w-full px-4 py-3  transition   flex items-center justify-center gap-3 cursor-pointer  text-uppercase"
         >
-          <IoCloudUploadOutline />
-          <span className="text-sm font-medium">
-            {" "}
-            {label} {require && <span className="text-red-500">*</span>}
-          </span>
+          <IoCloudUploadOutline className="size-6" />
         </label>
       )}
       <input

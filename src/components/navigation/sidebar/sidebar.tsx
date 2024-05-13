@@ -1,21 +1,18 @@
 import { Play } from "lucide-react";
 import { NavItem } from "./nav-item";
-import { adminSidebarData, donarSidebarData } from "./sidebar-data";
+import { adminSidebarData } from "./sidebar-data";
 import { Button } from "@/components/ui/button";
 import { useMenuStatus } from "@/components/hoc/menu-context";
 import { cn } from "@/lib/utils/tailwind-utils";
-import { useAuth } from "@/components/hoc/auth-context";
 import longLogo from "@/assets/long-logo.jpg";
 import logoIcon from "@/assets/logo-icon.png";
+import { useAuth } from "@/components/hoc/auth-provider";
 
 export const Sidebar = () => {
-  const { user } = useAuth();
-  const sidebarData =
-    user?.role === "admin"
-      ? adminSidebarData
-      : user?.role === "user"
-      ? donarSidebarData
-      : [];
+  const { auth } = useAuth();
+  console.log(auth);
+  console.log(auth?.role, "this is role");
+  const sidebarData = adminSidebarData;
   const { isActive, setIsActive } = useMenuStatus();
   return (
     <div className="fixed  h-full  inset-y-0 z-1000 border-r bg-background">

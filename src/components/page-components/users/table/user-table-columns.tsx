@@ -3,7 +3,11 @@
 import { UserProfileType } from "@/lib/schemas/user-profile.schema";
 import { ColumnDef } from "@tanstack/react-table";
 
-export const usersColumn: ColumnDef<UserProfileType>[] = [
+export const usersColumn: ColumnDef<
+  UserProfileType & {
+    id: string;
+  }
+>[] = [
   {
     accessorKey: "SN",
     header: () => <div className=" font-medium">SN</div>,

@@ -1,10 +1,4 @@
-import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "../ui/form";
+import { FormControl, FormField, FormItem, FormMessage } from "../ui/form";
 import { UseFormReturn } from "react-hook-form";
 import {
   Select,
@@ -13,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import { Label } from "../ui/label";
 
 type PropsType = {
   form: UseFormReturn<any, any, undefined>;
@@ -20,15 +15,22 @@ type PropsType = {
     value: string;
     label: string;
   }[];
+  defaultValue?: string;
+  showClear?: boolean;
 
   item: {
     fieldId: string;
     label: string;
-    placeholder: string;
+    placeholder?: string;
   };
 };
 
-export const SingleSelectField = ({ form, item, values }: PropsType) => {
+export const SingleSelectField = ({
+  form,
+  item,
+  values,
+  defaultValue,
+}: PropsType) => {
   return (
     <FormField
       key={item.fieldId}
@@ -37,17 +39,24 @@ export const SingleSelectField = ({ form, item, values }: PropsType) => {
       render={({ field }) => {
         return (
           <FormItem>
-            <FormLabel>{item.label}</FormLabel>
+            <Label>{item.label}</Label>
             <Select onValueChange={field.onChange} defaultValue={field.value}>
               <FormControl>
-                <SelectTrigger>
-                  <SelectValue placeholder={item.placeholder} />
+                <SelectTrigger className="capitalize">
+                  <SelectValue
+                    placeholder={item.placeholder}
+                    className="uppercase"
+                  />
                 </SelectTrigger>
               </FormControl>
-              <SelectContent>
+              <SelectContent defaultValue={defaultValue}>
                 {values.map((val, i) => {
                   return (
-                    <SelectItem key={i} value={val.value}>
+                    <SelectItem
+                      key={i}
+                      value={val.value}
+                      className="capitalize"
+                    >
                       {val.label}
                     </SelectItem>
                   );

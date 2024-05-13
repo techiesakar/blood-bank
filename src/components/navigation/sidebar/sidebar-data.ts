@@ -5,24 +5,20 @@ import {
   LayoutDashboard,
   Settings,
   Users,
-  Syringe,
   History,
   CalendarCheck,
-  Droplet,
   CircleHelp,
+  FlaskRound,
 } from "lucide-react";
+
+import { FaUserDoctor } from "react-icons/fa6";
+import { MdBloodtype } from "react-icons/md";
 
 export const adminSidebarData = [
   {
     label: "Overview",
     icon: LayoutDashboard,
     path: "/overview",
-  },
-
-  {
-    label: "Appointments",
-    icon: Droplet,
-    path: "/appointments",
   },
 
   {
@@ -36,13 +32,26 @@ export const adminSidebarData = [
     path: "/organizations",
   },
   {
-    label: "Donars",
+    label: "Donors",
     icon: HeartHandshake,
-    path: "/donars",
+    path: "/donors",
   },
+
+  {
+    label: "Donation",
+    icon: MdBloodtype,
+    path: "/donations",
+  },
+
+  {
+    label: "Lab",
+    icon: FlaskRound,
+    path: "/lab",
+  },
+
   {
     label: "Volunteers",
-    icon: Syringe,
+    icon: FaUserDoctor,
     path: "/volunteers",
   },
 
@@ -58,7 +67,7 @@ export const adminSidebarData = [
   },
 ];
 
-export const donarSidebarData = [
+export const donorSidebarData = [
   {
     label: "Overview",
     icon: LayoutDashboard,
